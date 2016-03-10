@@ -41,6 +41,6 @@ do
 	echo 'set logging off' >> _tmp.gdb
 done
 
-gdb -q -x _tmp.gdb swap >> /dev/null
+gdb -q -x _tmp.gdb bin-swap >> /dev/null
 
 rm _tmp.gdb

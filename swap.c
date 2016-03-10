@@ -86,10 +86,3 @@ List *swap(List *head, List *node_1, List *node_2)
     node_1->next = tmp_node;
     return head;
 }
-
-#if defined(MAIN_SWAP)
-int main()
-{
-    return 0;
-}
-#endif
