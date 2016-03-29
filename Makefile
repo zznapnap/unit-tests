@@ -10,6 +10,9 @@ OBJS := \
 	swap.o \
 	bubble.o \
 	stub.o
+RESULTS := \
+    result-swap \
+    result-bubble
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c -o $@ $<
@@ -22,4 +25,4 @@ check: $(EXEC)
 	bash test-bubble.sh data-bubble.in result-bubble
 
 clean:
-	$(RM) $(EXEC) $(OBJS)
+	$(RM) $(EXEC) $(OBJS) $(RESULTS)
